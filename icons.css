@@ -1,0 +1,50 @@
+@font-face {
+  font-family: 'icons-phone';
+  src:  url('fonts/icons-phone.eot?ya5hc7');
+  src:  url('fonts/icons-phone.eot?ya5hc7#iefix') format('embedded-opentype'),
+    url('fonts/icons-phone.ttf?ya5hc7') format('truetype'),
+    url('fonts/icons-phone.woff?ya5hc7') format('woff'),
+    url('fonts/icons-phone.svg?ya5hc7#icons-phone') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icons-phone' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-radio-unchecked:before {
+  content: "\ea56";
+  font-size: 11px;
+}
+
+.icon-cheveron-left:before {
+  content: "\e903";
+  font-size: 16px;
+  color: white;
+  cursor: pointer;
+  margin-right: -15px;
+}
+.icon-cheveron-right:before {
+  content: "\e900";
+  color: white;
+}
+.icon-dots-horizontal-triple:before {
+  content: "\e904";
+  color: white;
+  font-size: 15px;
+  margin-left: 52px;
+  cursor: pointer;
+}

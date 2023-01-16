@@ -1,0 +1,229 @@
+@import url(icons.css);
+:root{
+--Pale-Violet: hsl(275, 54%, 94%);
+--Moderate-Violet-chat-lef: hsl(276, 55%, 52%);
+--Desaturated-Dark-Violet-chat-right: hsl(271, 15%, 43%);
+--Grayish-Blue-placeholder-text: hsl(206, 6%, 79%);
+--Very-Dark-Desaturated-Violet-main-heading: hsl(271, 36%, 24%);
+--Dark-Grayish-Violet-paragraph: hsl(270, 7%, 64%);
+/***/
+--Light-Magenta: hsl(293, 100%, 63%);
+--Light-Violet: hsl(264, 100%, 61%);
+/***/
+--White: hsl(0, 0%, 100%);
+--Light-Grayish-Violet-app-background: hsl(270, 20%, 96%);
+--Very-Dark-Desaturated-Violet-submit-button: hsl(271, 36%, 24%);
+--Very-Light-Magenta-radio-button-outline: hsl(289, 100%, 72%);
+/***/
+--ff:'Rubik', sans-serif;
+--fw-400:400;
+--fw-500:500;
+--fw-700:700;
+}
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;  
+}
+body{
+    font-family: var(--ff);
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 120px;
+width: 100vw;
+overflow: hidden;
+
+}
+body::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: -137px;
+    width: 290px;
+    height: 648px;
+    background:linear-gradient(to bottom ,var(--Light-Magenta) ,var(--Light-Violet));
+    z-index: -1;
+    border-radius: 327px;
+}
+body::before{
+    content: "";
+    position: absolute;
+    right: -67px;
+    bottom: -135px;
+    width: 290px;
+    height: 648px;
+    background-color: var(--Pale-Violet);
+    z-index: -1;
+    border-radius: 327px;
+}
+/*right container*/
+.righ-container{
+display: grid;
+gap:    0px;
+width: 450px;
+}
+.righ-container .header-right{
+font-size:30px;
+font-weight: var(--fw-500);
+}
+.p-right{
+line-height: 1.5;
+color: var(--Dark-Grayish-Violet-paragraph);
+}
+/***/
+.left-container{
+    width: 240px;
+    height: 458px;
+    border: 10px solid var(--White);
+    border-radius: 30px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: rgb(0 0 0 / 15%) 0px 36px 50px 3px;
+    background-color: var(--Light-Grayish-Violet-app-background);
+}
+.left-container::after{
+    content: "";
+    width: calc(240px - 110px);
+    position: absolute;
+    top: -2%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 59px;
+    background-color: var(--White);
+    border-radius: 18px;
+}
+/* header app*/
+.header-top{
+width: 100%;
+height: 70px;
+padding: 35px 10px 10px 10px;
+display: flex;
+gap: 10px;
+font-size: 9px;
+background:linear-gradient(to left ,var(--Light-Magenta) ,var(--Light-Violet));
+align-items: center
+}
+.header-top img{
+    width: 23px;
+border: 1px solid var(--White);
+    border-radius: 50%;
+    height: 23px;
+    margin-left: 5px;
+}
+.header-top .name{
+color: var(--White);
+font-size: 11px;
+font-weight: var(--fw-500);
+}
+.header-top .name-disc{
+    color: var(--Dark-Grayish-Violet-paragraph);
+}
+/*chat*/
+.chat-container{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 5px ;
+    padding: 10px 4px;
+    font-size: 8px;
+    align-items: flex-start;
+    }
+    .bubble-left{
+        width: 129px;
+        padding: 7px;
+        background-color: var(--Pale-Violet);
+        border-radius: 10px;
+        border-bottom-left-radius: 3px;
+        color: var(--Moderate-Violet-chat-lef);
+
+    }
+    .images-dogs{
+    display: flex;
+    gap: 10px;
+    }
+    .images-dogs img{
+        width: 42px;
+        height: 42px;
+    border-radius: 10px;
+    }
+    .bubble-right{
+        padding: 7px;
+        background-color: bisque;
+        border-radius: 10px;
+        border-bottom-right-radius: 3px;
+        color: var(--Desaturated-Dark-Violet-chat-right);
+        background-color: var(--White);
+        min-width: auto;
+        max-width: 137px;
+    }
+    .right-chat{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 4px;
+        margin-top: 10px;
+    }
+    .bubble-checkbox{
+        width: 149px;
+   display: flex;
+    padding: 8px 17px 8px 8px ;
+    background:linear-gradient(to right ,var(--Very-Light-Magenta-radio-button-outline) ,var(--Light-Violet));
+    border-radius: 10px;
+    border-bottom-left-radius: 3px;
+    color: white;
+    align-items: center;
+    justify-content: space-between;
+    }
+    .icon-radio-unchecked{
+        display: flex;
+        gap: 10px;
+        align-items: center;
+    }
+    .bubble-checkbox span:nth-child(2){
+font-size: 11px;
+font-weight: var(--fw-700);
+    }
+/*input button*/
+.input-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   border-radius: 20px;
+  width: 200px;
+  position: relative;
+  
+  }
+  .input-button input{
+    color: var(--Grayish-Blue-placeholder-text);
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    outline: none;
+    height: 30px;
+    border-radius: 15px;
+    padding: 10px 40px 10px 20px ;
+    border: 0;
+    font-size: 8px;
+  }
+  .input-button button{
+    position: absolute;
+    right: 4px;
+    border: 0;
+    border-radius: 50%;
+    background-color: var(--Very-Dark-Desaturated-Violet-submit-button);
+    width: 23px;
+    height: 23px;
+    cursor: pointer;
+    
+  }
+  .input-button-position{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: -2px;
+    margin-top: 5px;
+  }
